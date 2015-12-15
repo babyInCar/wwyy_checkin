@@ -73,17 +73,17 @@
      /********************/
      /* 底部按钮原始样式 */
      /********************/
-     .bbtn01 {background: url(./image/main_index01.png) no-repeat center 4px; }
-     .bbtn02 {background: url(./image/main_index02.png) no-repeat center 4px; }
-     .bbtn03 {background: url(./image/main_index03.png) no-repeat center 4px; }
-     .bbtn04 {background: url(./image/main_index04.png) no-repeat center 4px; }
+     .bbtn01 {background: url(./images/main_index01.png) no-repeat center 4px; }
+     .bbtn02 {background: url(./images/main_index02.png) no-repeat center 4px; }
+     .bbtn03 {background: url(./images/main_index03.png) no-repeat center 4px; }
+     .bbtn04 {background: url(./images/main_index04.png) no-repeat center 4px; }
      .bottom_btn {width: 99%; /*height: 43px;*/padding-top: 21px;background-position-y: 4px; background-size: 24px;  font-size: 10px; color: #FFC125;}
      
      /* 底部按钮激活样式 */
-     .activebtn0 {/*background: url(./image/main_index01pressed.png) no-repeat center 4px; */}
-     .activebtn1 {/*background: url(./image/main_index02pressed.png) no-repeat center 4px; */}
-     .activebtn2 {/*background: url(./image/main_index03pressed.png) no-repeat center 4px; */}
-     .activebtn3 {/*background: url(./image/main_index04pressed.png) no-repeat center 4px; */}
+     .activebtn0 {/*background: url(./images/main_index01pressed.png) no-repeat center 4px; */}
+     .activebtn1 {/*background: url(./images/main_index02pressed.png) no-repeat center 4px; */}
+     .activebtn2 {/*background: url(./images/main_index03pressed.png) no-repeat center 4px; */}
+     .activebtn3 {/*background: url(./images/main_index04pressed.png) no-repeat center 4px; */}
      .activebtn {color:#fff; background-size: 24px; background-color: #D33A31;}
      .bottomhover {background-color: #46494B;}
 
@@ -108,21 +108,33 @@
         </ui>
 	</div>
     
-    <form>	
+    <form id="checkin" name="content" action="./deal.php" method="get">	
 	<div id="firstHeader">
-		
+		<span class="single">年级</span>
+        <div class="single"><select name="grade" style="text-align:center;width:400px;height:30px;">
+            <option value="one">一年级</option>
+            <option value="two">二年级</option>
+            <option value="three">三年级</option>
+            <option value="four">四年级</option>
+            <option value="five">五年级</option>
+        </select>
+        </div>
         <span class="single">手指操</span>
-        <div class="time_input"><input type=“text”>分钟</div>
+        <div class="time_input"><input type="text" name="shouzc">分钟</div>
         <span class="single">音&nbsp;&nbsp;&nbsp;阶</span><br>
-        <div class="time_input"><input type=“text”>分钟</div>
+        <div class="time_input"><input type="text" name="yinj">分钟</div>
         <span class="single">歌&nbsp;&nbsp;&nbsp;曲</span><br>
-        <div class="time_input"><input type=“text”>分钟</div><br>
+        <div class="time_input"><input type="text" name="song">分钟</div><br>
+        <div class="single">和&nbsp;&nbsp;&nbsp;弦</div>
+        <div class="time_input"><input type="text" name="hex">分钟</div>
         <span class="single"> &nbsp;&nbsp;&nbsp;8351  </span>
-        <div class="time_input"><input type=“text”>分钟</div><br>
+        <div class="time_input"><input type="text" name="etfo">分钟</div><br>
+        <div class="single">备注</div>
+        <div class="time_input"><input type="text" name="remark"></div>
 	</div>
 	<div id="bottom">
 	<!-- <a class="bottom_btn bbtn01 weixin activebtn activebtn0">发现音乐</a> -->
-	<input type="button" class="bottom_btn bbtn02 weixin activebtn activebtn0" value="快乐打卡">
+	<input type="submit" class="bottom_btn bbtn02 weixin activebtn activebtn0" value="快乐打卡">
 	</div>	
 	</form>
 	</body>

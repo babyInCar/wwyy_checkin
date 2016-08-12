@@ -1,5 +1,5 @@
 <?php
-echo "i am here";
+
 // print_r($_POST['shouzc']);
  $check_arr = {}
  if($_POST){
